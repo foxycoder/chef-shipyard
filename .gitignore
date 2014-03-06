@@ -1,0 +1,16 @@
+.vagrant
+Berksfile.lock
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+/cookbooks
+.zero-knife.rb
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
