@@ -30,11 +30,5 @@ Vagrant.configure("2") do |config|
   # Chef config.
   config.vm.provision :chef_client do |chef|
     chef.add_recipe "shipyard"
-
-    chef.json = {
-      :docker => {
-        :group_members => ["vagrant"]
-      }
-    }
   end
 end

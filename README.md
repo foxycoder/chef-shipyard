@@ -24,11 +24,19 @@ Run vagrant as normal
 
     vagrant up
 
-Once complete Jenkins should be running on on the following URL
+Once complete the shipyard server should be running on on the following URL
 
     http://33.33.33.10:8000/
 
 Login with the default credentials "admin/shipyard"
+
+Once we have a shipyard server we'll need an agent running
+
+    vagrant ssh
+    sudo shipyard-agent -url http://33.33.33.10:8000 -register
+    sudo shipyard-agent -url http://33.33.33.10:8000 -key XXXXXX &
+
+And this agent will need to be accepted in the shipyard UI
 
 # Attributes
 
