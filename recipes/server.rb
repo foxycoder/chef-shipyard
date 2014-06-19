@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe "docker"
+
 docker_image 'shipyard/deploy'
 
 docker_container 'shipyard/deploy' do

@@ -7,8 +7,5 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "docker"
-include_recipe "shipyard::docker_fix"
-include_recipe "shipyard::shipyard_server"
-include_recipe "shipyard::shipyard_agent"
+include_recipe "shipyard::agent"
 
