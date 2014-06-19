@@ -6,10 +6,11 @@ http://shipyard-project.com/
 
 # Usage
 
-First converge host with ```shipyard::server```
-Wait for deploy to finish, check that WebUI is reachable.
-Then converge agent hosts with correct shipyard URL.
-Agents connects automaticaly, but needs to be enabled in WebUI
+- converge host with ```shipyard::server```
+- Wait for deploy to finish, check that WebUI is reachable.
+- converge agent hosts with correct shipyard URL.
+
+Agents connects automaticaly, but need to be enabled in WebUI
 
 # Attributes
 
