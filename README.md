@@ -4,26 +4,24 @@ This cookbook installs the docker management application shipyard
 
 http://shipyard-project.com/
 
-# Requirements
-
-
-It has the following cookbook dependencies
-
-- docker
-
 # Usage
 
-This cookbook has two main recipies:
-
-- shipyard::default - docker&shipyard-agent
-- shipyard::server - docker&shipyard-agent&shipyard-server
+First converge host with ```shipyard::server```
+Wait for deploy to finish, check that WebUI is reachable.
+Then converge agent hosts with correct shipyard URL.
+Agents connects automaticaly, but needs to be enabled in WebUI
 
 # Attributes
 
+```node['shipyard']['url']``` = server url
+
 # Recipes
 
-- default
+This cookbook has two main recipies:
+
+- shipyard::default - docker and shipyard-agent
+- shipyard::server  - docker and shipyard-server
 
 # Author
 
-Author:: Mark O'Connor (mark@myspotontheweb.com)
+Author:: Sergey Melnik (smelnik@onetwotrip.com)
