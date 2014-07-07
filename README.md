@@ -55,7 +55,7 @@ With the following content:
 ```json
 {
   "username": "your_username",
-  "password": "your_password"
+  "password": "your_password",
   "email": "your_email"
 }
 ```
