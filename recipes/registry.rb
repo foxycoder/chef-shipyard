@@ -3,5 +3,6 @@ if node[:shipyard][:registry][:private_url]
   docker_registry node[:shipyard][:registry][:private_url] do
     username registry_credentials['username']
     password registry_credentials['password']
+    email registry_credentials['email']
   end
 end
