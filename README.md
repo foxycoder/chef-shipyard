@@ -54,6 +54,7 @@ With the following content:
 
 ```json
 {
+  "id": "registry",
   "username": "your_username",
   "password": "your_password",
   "email": "your_email"
